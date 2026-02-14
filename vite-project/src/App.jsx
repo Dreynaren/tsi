@@ -17,14 +17,18 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <div class="min-h-screen flex flex-col">
       < Header />
+      <main class='flex-grow bg-gray-300'>
         <Routes>
           <Route path = '/' element = {<Home/>}></Route>
           <Route path = '/Contacts' element = {<Contacts/>}></Route>
           <Route path='/Login' element = {<Login/>}></Route>
           <Route path='/Register' element = {<Register/>}></Route>
         </Routes>
+        </main>
         {<Footer />}
+      </div>
       </BrowserRouter>
     </>
   )
