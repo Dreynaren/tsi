@@ -1,8 +1,11 @@
+import { Button } from "../components/button"
+
 export const Home = () => {
   return (
     <>
     <h1>Главная</h1>
-    <p>asd</p>
+    <Button
+    size="small" color="primary" title="фывфывфывфыв" ></Button>
     </>
   )
 }
